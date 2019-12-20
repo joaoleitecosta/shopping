@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping/pages/signup.page.dart';
 
 class LoginPages extends StatelessWidget {
   @override
@@ -60,7 +61,14 @@ class LoginPages extends StatelessWidget {
                                 color: Theme.of(context).accentColor,
                               ),
                             ),
-                            onPressed: (){},
+                            onPressed: (){
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => SignupPage(),
+                                  ),
+                              );
+                            },
                           ),
                         ],
                       ),
@@ -127,7 +135,8 @@ class LoginPages extends StatelessWidget {
                                fontSize: 20,
                              ),
                            ),
-                          onPressed: (){},
+                          onPressed: (){
+                          },
                         ),
                       ),
                     ],
